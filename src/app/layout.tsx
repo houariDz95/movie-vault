@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <script  data-cfasync="false" src="//affordspoonsgray.com/5124eefbaa72ac6102cfa1f1d50092bc/invoke.js"></script>
+        <script type='text/javascript' src='//affordspoonsgray.com/2a/86/2b/2a862b1af2220cccdea340b42f065a42.js'></script>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark" 
@@ -30,6 +33,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

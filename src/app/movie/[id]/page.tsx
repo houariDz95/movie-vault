@@ -1,6 +1,8 @@
 import MovieContainer from "@/components/MovieContainer";
 import VideoPlayer from "@/components/VideoPlayer";
 import { getImagePath } from "@/lib/getImagePath";
+import Banner_720 from "@/banners/banner_720";
+
 import {
   getMovieDetails,
   getMovieVideos,
@@ -8,7 +10,7 @@ import {
 } from "@/lib/getMovies";
 import Image from "next/image";
 import React from "react";
-
+import Script from "next/script";
 
 interface Props {
   params: {
@@ -52,10 +54,13 @@ const MovieDetails = async ({ params: { id } }: Props) => {
   }));
   const details: any = await getMovieDetails(id);
   const popoularMovies = await getPopularMovies();
-  console.log(details)
+
   return (
     <div>
       <div className="px-10">
+        <div className="flex items-center justify-center">
+          <Banner_720 />
+        </div>
         <div className="py-10 lg:py-16 px-4 lg:px-8  text-gray-100 mb-8">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             {/* Movie backdrop with play button */}
@@ -121,10 +126,14 @@ const MovieDetails = async ({ params: { id } }: Props) => {
               {/* Buttons: Watch and Download */}
               <div className="flex gap-4 mt-6">
                 <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-500 transition duration-300">
-                  Watch
+                  <a href="https://affordspoonsgray.com/br2tqwh1b?key=6e18e772fe82e44d0f60f85385178228">
+                    Watch
+                  </a>
                 </button>
                 <button className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-500 transition duration-300">
-                  Download
+                  <a href="https://affordspoonsgray.com/br2tqwh1b?key=6e18e772fe82e44d0f60f85385178228">
+                    Download
+                  </a>
                 </button>
               </div>
             </div>
@@ -155,7 +164,9 @@ const MovieDetails = async ({ params: { id } }: Props) => {
             </div>
           </div>
         </div>
-
+        <div>
+          <div id="container-5124eefbaa72ac6102cfa1f1d50092bc"></div>
+        </div>
         <VideoPlayer videos={videos} />
       </div>
       <div className="mt-6">
