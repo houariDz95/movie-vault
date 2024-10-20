@@ -33,7 +33,7 @@ export default function RootLayout({
           <Footer />
         </ThemeProvider>
         <Analytics />
-        <Script  data-cfasync="false" src="//affordspoonsgray.com/5124eefbaa72ac6102cfa1f1d50092bc/invoke.js" />
+        <Script  data-cfasync="false" src="//affordspoonsgray.com/5124eefbaa72ac6102cfa1f1d50092bc/invoke.js"  />
         <Script type='text/javascript' src='//affordspoonsgray.com/2a/86/2b/2a862b1af2220cccdea340b42f065a42.js' />
       </body>
     </html>
