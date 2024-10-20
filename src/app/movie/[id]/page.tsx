@@ -74,7 +74,7 @@ const MovieDetails = async ({ params: { id } }: Props) => {
               />
               {/* Play button in the center */}
               <div className="absolute inset-0 flex justify-center items-center">
-                <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-full shadow-lg transition duration-300">
+                <a href="https://affordspoonsgray.com/br2tqwh1b?key=6e18e772fe82e44d0f60f85385178228" className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-full shadow-lg transition duration-300">
                   <svg
                     className="w-12 h-12 text-gray-900"
                     fill="currentColor"
@@ -83,7 +83,7 @@ const MovieDetails = async ({ params: { id } }: Props) => {
                   >
                     <path d="M6.4 5.27a.75.75 0 00-1.15.64v7.18a.75.75 0 001.15.64l6.6-3.59a.75.75 0 000-1.28l-6.6-3.59z" />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
 
