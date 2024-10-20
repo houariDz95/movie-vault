@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import GenreDropDown from "./GenreDropDown";
 import SearchInput from "./SearchInput";
-import ThemeToggler from "./ThemeToggler";
 
 const Header = () => {
   return (
-    <div className="w-full flex items-center justify-between backdrop-blur-2xl transition-colors p-5 bg-[#12121280] gap-4 md:gap-0 sticky z-50 top-0">
+    <div className="w-full flex items-center px-4 sm:px-8 md:px-16 lg:px-28 justify-between backdrop-blur-2xl transition-colors p-5 bg-[#12121280] gap-4 md:gap-0 sticky z-50 top-0">
       {/* Logo */}
       <Link href={"/"}>
         <Image
@@ -24,8 +23,6 @@ const Header = () => {
         <GenreDropDown />
         {/* Search */}
         <SearchInput />
-        {/* Theme */}
-        <ThemeToggler />
       </div>
     </div>
   );

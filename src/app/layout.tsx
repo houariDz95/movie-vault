@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Movie Streaming Studio",
+  title: "The Movie Vault",
   description: "An application for your favorite movies",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark" 
           enableSystem
           disableTransitionOnChange
         >
