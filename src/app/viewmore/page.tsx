@@ -28,7 +28,7 @@ const ViewMorePage = async ({ searchParams: { title } }: Props) => {
 
   return (
     <div className="py-10">
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center overflow-hidden">
         <Banner_720 />
       </div>
       <h2 className="text-4xl font-bold px-10 mb-5">Results of {title}</h2>

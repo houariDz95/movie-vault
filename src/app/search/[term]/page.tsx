@@ -16,7 +16,7 @@ const SearchPage = async ({ params: { term } }: Props) => {
 
   return (
     <div className="py-10 max-w-screen-xl mx-auto">
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center overflow-hidden">
         <Banner_720 />
       </div>
       <h2 className="text-4xl font-bold px-10 mb-5">Results for {termToUse}</h2>

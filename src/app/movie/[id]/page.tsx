@@ -58,7 +58,7 @@ const MovieDetails = async ({ params: { id } }: Props) => {
   return (
     <div>
       <div className="px-10">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center overflow-hidden">
           <Banner_720 />
         </div>
         <div className="py-10 lg:py-16 px-4 lg:px-8  text-gray-100 mb-8">
